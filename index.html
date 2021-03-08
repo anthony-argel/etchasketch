@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/reset.css"/>
+        <link rel="stylesheet" href="styles/styles.css"/>
+    </head>
+
+    <body>
+        <main>
+            <div id="ui">
+                <div class="flex-col" id="text-info">
+                    <h1>Etch-a-sketch</h1>
+                    <h3>Drawing state: <span id="drawing-state" class="not-drawing"></span></h3>
+                    <p>Click to start</p>
+                </div>
+                <div class="flex-col" id="buttons">
+                    <button id="new-btn" onclick="createCustomBoard()">New Board</button>
+                   <button id="reset-btn" onclick="resetCanvas()">Reset Canvas</button>
+                </div>
+            </div>
+            <div id="container">
+            </div>
+        </main>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
